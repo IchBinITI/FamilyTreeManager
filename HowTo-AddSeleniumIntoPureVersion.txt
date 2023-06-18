@@ -1,0 +1,46 @@
+short description how to get a full version out of 
+- Stammbaum_V2_0-Pure
+- ChromeDriver
+- Selenium
+
+
+1st download Stammbaum_V2_0-Pure.zip
+2nd download Selenium PowerShell Module 4.0.0 (https://github.com/adamdriscoll/selenium-powershell)
+3rd download ChromeDriver 114 (version like your installed version of chrome browser)(https://sites.google.com/chromium.org/driver/downloads?authuser=0)
+
+store the Stammbaum_V2_0-Pure in your favourite destination folder (i call it now the "MainFolder")
+build a sub folder "Selenium" in your "MainFolder"
+in that selenium folder, create 2 sub folders.
+one is the selenium-powershell-master, the original, downloaded from selenium web page.
+the other is called  "chromedriver" that needs an additional sub folder named "win32".
+in that win32 folder there you need the folders related to the version "112", "113", ...
+result should be:
+
+"MainFolder"
+├───Selenium
+│   ├───chromedriver
+│   │   └───win32
+│   │       ├───112
+│   │       │       chromedriver.exe
+│   │       │       LICENSE.chromedriver
+│   │       │
+│   │       ├───113
+│   │       │       chromedriver.exe
+│   │       │       LICENSE.chromedriver
+│   │       │
+│   │       └───114
+│   │               chromedriver.exe
+│   │               LICENSE.chromedriver
+│   └───selenium-powershell-master
+│       ├───...
+│       │
+│       ...
+├───DBDaten
+└───ZielDateien
+
+
+now you have the same like you would have if you download the 4 split-files and unpack them:
+- StammbaumV2_0.zip.001
+- StammbaumV2_0.zip.002
+- StammbaumV2_0.zip.003
+- StammbaumV2_0.zip.004
